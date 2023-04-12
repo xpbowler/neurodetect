@@ -6,13 +6,14 @@ from tensorflow.keras.models import load_model
 import autokeras as ak
 from flask import Flask, request
 from flask_cors import CORS
+
 app = Flask(__name__)
 CORS(app)
 
 @app.route("/",methods=["POST","GET"])
 def predict():
     request.files["image"].save("frontend.png")
-    model_brca = load_model("/Users/ryan_n/BRCA_ML/BRCA_ML/CNN Models/brca_model2",custom_objects=ak.CUSTOM_OBJECTS)
+    model_brca = load_model("/Users/ryan_n/BRCA_ML/BRCA_ML/RNA-seq-Based-Cancer-Identification---NeuroDetect-Website/brca_model2",custom_objects=ak.CUSTOM_OBJECTS)
     img = tf.keras.utils.load_img("frontend.png", target_size=(133,150))
     img_array = tf.expand_dims(tf.keras.utils.img_to_array(img),0)
     prediction = model_brca.predict(img_array)

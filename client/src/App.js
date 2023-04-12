@@ -1,11 +1,14 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import axios from "axios";
 import './App.css';
+
 
 
 function App() {
   const [image, setImage] = useState(null);
   const [prediction, setPrediction] = useState("");
+  const [content, setContent] = useState(null);
+  const [mainp, setMainp] = useState(0);
 
   const handleImageChange = (event) => {
     setImage(event.target.files[0]);
@@ -20,24 +23,39 @@ function App() {
   };
 
   const load_about = () => {
-
+    setContent(
+      <>
+        <p>About page</p>
+      </>
+    )
   }
 
   const load_how_it_works = () => {
-    
+    setContent(
+      <>
+        <p>How it works page</p>
+      </>
+    )
   }
+
+  useEffect(()=> {
+    setContent(
+      <>
+        <input type="file" onChange={handleImageChange} accept="image/*" />
+        <button id="predict_btn" onClick={handleImageSubmit}>Predict</button>
+        {<p id="result">{prediction}</p>}
+      </>
+    );
+  },[mainp])
 
   return (
     <div>
       <header>
-        <div className="subheader">NeuroDetect</div>
+        <button className="headerbutton" onClick={()=> setMainp((prevMainp)=> prevMainp + 1)}>NeuroDetect</button>
         <button className="headerbutton" onClick={load_about}>About</button>
         <button className="headerbutton" onClick={load_how_it_works}>How it Works</button>
       </header>
-      <h1>CNN Image Prediction</h1>
-      <input type="file" onChange={handleImageChange} accept="image/*" />
-      <button id="predict_btn" onClick={handleImageSubmit}>Predict</button>
-      {prediction && <p>{prediction}</p>}
+      <div>{content}</div>
     </div>
   )
 }

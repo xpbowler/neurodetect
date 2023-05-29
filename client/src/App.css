@@ -1,12 +1,13 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  font-size: 18px;
   margin: 0;
   padding: 0;
-  background-color: #ccf2eb;
+  background-color: #ffffff;
 }
 
 header {
-  background-color: #a0a6dd;
+  background-color: #000000;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -24,7 +25,6 @@ header {
 .subheader{
   font-size:24px;
   display: inline-block;
-  float: left;
 }
 
 .form-group {
@@ -39,8 +39,14 @@ label {
 }
 
 #result{
-  position: absolute;
-  top: 350px;
+  position: relative;
+  top: 120px;
+  left: 50px;
+}
+
+#input_prompt{
+  position: relative;
+  top: 50px;
   left: 50px;
 }
 
@@ -48,8 +54,8 @@ input[type="file"] {
   display: block;
   margin-bottom: 10px;
   width: 100%;
-  position: absolute;
-  top: 200px;
+  position: relative;
+  top: 50px;
   left: 50px;
 }
 
@@ -64,13 +70,19 @@ button {
 }
 
 #predict_btn{
-  position: absolute;
-  top: 250px;
+  position: relative;
+  top: 100px;
+  left: 50px;
+}
+
+#option_select{
+  position: relative;
+  top: 30px;
   left: 50px;
 }
 
 .headerbutton {
-  background-color: #8973c6;
+  background-color: #000000;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -80,8 +92,55 @@ button {
   width:33%;
 }
 
+.about{
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+
+.how_it_works{
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+
 p {
-  font-size: 16px;
-  background-color: #7271ac;
+  font-size: 18px;
+  background-color: #ffffff;
   border-radius: 5px;
+}
+
+.pca{
+  position: relative;
+  top: 60px;
+  left: 50px;
+  overflow: auto;
+}
+.image{
+  float: left;
+  margin-right: 20px;
+  width: 40%;
+}
+
+.image2{
+  width:20%;
+}
+
+.heatmap_header{
+  position: relative;
+  left: 20px;
+  top: 60px;
+}
+
+.heatmap_header2{
+  position: relative;
+  left: 20px;
+  top: 45px;
+}
+
+#date{
+  position: relative;
+  top: 150px;
+  left: 1250px;
+  font-size: 14px;
 }

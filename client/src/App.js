@@ -71,10 +71,22 @@ function App() {
               The aim of NeuroDetect is to use a lightweight convolutional neural network (CNN) to analyze a 
               patient's RNA-seq profile and predict whether they have breast cancer or not, 
               <br></br>
-              as well as the stage progression if present. The prediction would be further corroborated with a more definitive diagnosis, such as an X-ray or PET-scan.
+              as well as the stage progression if present. The prediction would be further corroborated with a more definitive diagnosis, such as an X-ray or PET-scan. NeuroDetect was initiated as part
+              <br></br>
+              of a Grade 12 computer science course (ICS4U) in Spring 2023. 
               <br></br>
               <br></br>
-              NeuroDetect was initiated as part of a Grade 12 computer science course (ICS4U) in Spring 2023. The project's code can be found here: https://tinyurl.com/4ssfjbpm
+              <a href="https://github.com/xpbowler/RNA-seq-Based-Cancer-Identification---NeuroDetect-Website">Project Github</a>
+              <p id="developer_title">The developers</p>
+              <br></br>
+              <br></br>
+              Ryan Nguyen: Incoming Software Engineering Student at the University of Waterloo; Research intern in the Crawley Lab, Ottawa Hospital Research Institute. (<a href="https://www.linkedin.com/in/ryan-nguyen-0aa676218/">LinkedIn</a>)
+              <br></br>
+              (Principal Investigator: Dr. Angela Crawley, PhD)
+              <br></br>
+              <br></br>
+              Harvey Cai: Grade 12 student at Earl of March Secondary School, Ottawa, Canada.
+              <br></br>
               <br></br>
               <br></br>
             </div>
@@ -126,7 +138,6 @@ function App() {
                 <img src={sample_brca_t} alt="sample_2D_images" className="image2"/>
                 <img src={sample_kirc_n} alt="sample_2D_images" className="image2"/>
                 <img src={sample_kirc_t} alt="sample_2D_images" className="image2"/>
-                <img/>
               </div>
               <div className="pca">
                 <img src={sample_luad_n} alt="sample_2D_images" className="image2"/>

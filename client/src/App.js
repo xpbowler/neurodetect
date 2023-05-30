@@ -77,7 +77,7 @@ function App() {
               <br></br>
               <br></br>
               <a href="https://github.com/xpbowler/RNA-seq-Based-Cancer-Identification---NeuroDetect-Website">Project Github</a>
-              <p id="developer_title">The developers</p>
+              <p className="developer_title">The developers</p>
               <br></br>
               <br></br>
               Ryan Nguyen: Incoming Software Engineering Student at the University of Waterloo; Research intern in the Crawley Lab, Ottawa Hospital Research Institute. (<a href="https://www.linkedin.com/in/ryan-nguyen-0aa676218/">LinkedIn</a>)
@@ -147,6 +147,7 @@ function App() {
               </div>
             </div>
             <br></br>
+            <p className="developer_title">References</p>
             <br></br>
             <br></br>
           </>

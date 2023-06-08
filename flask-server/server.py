@@ -1,3 +1,4 @@
+#run: conda activate tensorflow 
 #run: export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
 import numpy as np
 import pandas as pd

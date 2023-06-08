@@ -147,8 +147,9 @@ function App() {
               </div>
             </div>
             <br></br>
-            <p className="developer_title">References</p>
+            <p className="references_title">References</p>
             <br></br>
+            
             <br></br>
           </>
         ) : (

@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 header {
@@ -45,6 +46,9 @@ label {
 }
 
 #input_prompt{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
   position: relative;
   top: 50px;
   left: 50px;
@@ -87,9 +91,10 @@ button {
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
-  font-size: 18px;
+  font-size: 22px;
   cursor: pointer;
   width:33%;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .about{
@@ -102,6 +107,7 @@ button {
   position: relative;
   top: 20px;
   left: 50px;
+  overflow-x: hidden;
 }
 
 p {
@@ -111,47 +117,36 @@ p {
 }
 
 .pca{
-  position: relative;
-  top: 60px;
-  left: 50px;
+  display: flex;
   overflow: auto;
+  width: 110%;
 }
+
+
+.image2{
+  max-width: 20%;
+  height:auto;
+}
+
 .image{
   float: left;
   margin-right: 20px;
   width: 40%;
 }
 
-.image2{
-  width:20%;
-}
-
-.heatmap_header{
-  position: relative;
-  left: 20px;
-  top: 60px;
-}
-
-.heatmap_header2{
-  position: relative;
-  left: 20px;
-  top: 45px;
-}
-
 #date{
   position: relative;
-  top: 150px;
-  left: 1250px;
+  top: 190px;
+  left: 1500px;
   font-size: 14px;
 }
 
-.developer_title{
+#developer_title{
   position: relative;
-  top: 50px;
+  top: 80px;
   left: 0px;
-  font-size: 20px; 
+  font-size: 24px; 
   font-weight: bold;
-
 }
 
 .references_title{
@@ -161,4 +156,15 @@ p {
   font-size: 20px; 
   font-weight: bold;
 
+}
+
+.textbox{
+  position: relative;
+  top: 20px;
+  left: 0px;
+  width: 1600px;
+}
+
+.textbox[data-sizing="intrinsic"] {
+  width: min-content;
 }

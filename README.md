@@ -10,7 +10,14 @@ The CNN was trained with Tensorflow based on patient RNA-seq data transformed in
 
 ## How to use it 
 
-NeuroDetect takes a 2D image transformed from RNA-seq data as the input. Under ```c_images``` the test and train data can be found. Under each category, there are 8 classes of tissue: Breast Normal Tissue (BRCA.N), Breast Invasive Carcinoma (BRCA.T), Kidney Renal Normal Tissue (KIRC.N), Kidney Renal Clear Cell Carcinoma (KIRC.T) Lung Normal Tissue (LUAD.N), Lung Adenocarcinoma (LUAD.T), Uterine Corpus Endometrial Normal Tissue (UCEC.N), and Uterine Corpus Endometrial Carcinoma (UCEC.T). To test out NeuroDetect, input a file from any of the 8 categories under test data, which the CNN has never seen before. A video explanation of NeuroDetect can be found below: 
+NeuroDetect takes a 2D image transformed from RNA-seq data as the input. Under ```c_images``` the test and train data can be found. Under each category, there are 8 classes of tissue: 
+
+- Breast Normal Tissue (BRCA.N)                                                          - Breast Invasive Carcinoma (BRCA.T),
+- Kidney Renal Normal Tissue (KIRC.N)                                                    - Kidney Renal Clear Cell Carcinoma (KIRC.T)
+- Lung Normal Tissue (LUAD.N)                                                            - Lung Adenocarcinoma (LUAD.T),
+- Uterine Corpus Endometrial Normal Tissue (UCEC.N)                                      - Uterine Corpus Endometrial Carcinoma (UCEC.T). 
+
+To test out NeuroDetect, input a file from any of the 8 categories under test data, which the CNN has never seen before. Video demonstration of NeuroDetect: 
 
 
 

@@ -149,7 +149,6 @@ function App() {
         <p id ="result">{prediction2}</p>
         <p id ="result">{prediction3}</p>
         <p id ="result">{prediction4}</p>
-        <p id="date">Last updated: June 9, 2023</p>
         <br/>
       </div>
     </div>

@@ -4,7 +4,26 @@ As a patient develops cancer, their gene expression pattern changes in a charact
 
 ## About
 
-The CNN was trained with Tensorflow based on patient RNA-seq data transformed into 2D images suitable for the CNN’s convolutional layer. It contains 2.4M parameters, achieves a 98.7% prediction accuracy, and is able to classify 4 types of cancer: breast, lung, kidney, and uterine cancer. NeuroDetect takes a 2D image transformed from RNA-seq data as the input. 
+The CNN was trained with Tensorflow based on patient RNA-seq data transformed into 2D images suitable for the CNN’s convolutional layer. It contains 2.4M parameters, achieves a 98.7% prediction accuracy, and is able to classify 4 types of cancer: breast, lung, kidney, and uterine cancer. 
+
+![image](https://github.com/xpbowler/RNA-seq-Based-Cancer-Identification---NeuroDetect-Website/blob/main/misc/Screenshot%202023-06-21%20at%2011.07.44%20AM.png) 
+
+## How to use it 
+
+NeuroDetect takes a 2D image transformed from RNA-seq data as the input. Under ```c_images``` the test and train data can be found. Under each category, there are 8 classes of tissue: 
+
+- Breast Normal Tissue (BRCA.N)
+- Breast Invasive Carcinoma (BRCA.T)
+- Kidney Renal Normal Tissue (KIRC.N)
+- Kidney Renal Clear Cell Carcinoma (KIRC.T)
+- Lung Normal Tissue (LUAD.N)
+- Lung Adenocarcinoma (LUAD.T)
+- Uterine Corpus Endometrial Normal Tissue (UCEC.N)
+- Uterine Corpus Endometrial Carcinoma (UCEC.T)
+
+To test out NeuroDetect, input a file from any of the 8 categories under test data, which the CNN has never seen before. Video demonstration of NeuroDetect: 
+
+
 
 ## Installation
 

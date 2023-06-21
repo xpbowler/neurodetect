@@ -21,7 +21,11 @@ NeuroDetect takes a 2D image transformed from RNA-seq data as the input. Under `
 - Uterine Corpus Endometrial Normal Tissue (UCEC.N)
 - Uterine Corpus Endometrial Carcinoma (UCEC.T)
 
-To test out NeuroDetect, input a file from any of the 8 categories under test data, which the CNN has never seen before. Video demonstration of NeuroDetect: 
+To test out NeuroDetect, input a file from any of the 8 categories under test data, which the CNN has never seen before. 
+
+## Video Demo of NeuroDetect
+
+![video](https://youtu.be/760QNJhCh3k) 
 
 
 

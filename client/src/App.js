@@ -100,7 +100,7 @@ function App() {
               Uterine Corpus Endometrial Carcinoma (UCEC.T)</p>
               <p className="textbox" data-element="textbox">Using the training data, we visualized the raw RNA-seq data by projecting it in a low dimensional space 
               using Principal Component Analysis (PCA), which is a linear projection. From the figures below for BRCA(left) and UCEC(right), it is clear that the RNA-seq 
-              data forms two clusters according to the classes 11 (Tumor) and 01 (Normal). Thus we establish that there is, indeed, a statistically significant difference 
+              data forms two clusters according to the classes 01 (Tumor) and 11 (Normal). Thus we establish that there is, indeed, a statistically significant difference 
               between the RNA-seq of Tumor and Normal tissue. The NeuroDetect CNN identifies and differentiates classes based on this difference.</p>
               <br/>
               <br/>

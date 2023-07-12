@@ -23,20 +23,28 @@ def predict():
     score = tf.nn.softmax(prediction[0])
     if(np.array(score).argmax() == 0):
         result = f'The RNA-seq data most likely belongs to class: Breast Normal Tissue.'
+        result4 = 'Breast Normal Tissue'
     elif(np.array(score).argmax() == 1):
         result = f'The RNA-seq data most likely belongs to class: Breast Invasive Carcinoma.'
+        result4 = 'Breast Invasive Carcinoma'
     elif(np.array(score).argmax() == 2):
         result = f'The RNA-seq data most likely belongs to class: Kidney Renal Normal Tissue.'
+        result4 = 'Kidney Renal Normal Tissue'
     elif(np.array(score).argmax() == 3):
         result = f'The RNA-seq data most likely belongs to class: Kidney Renal Clear Cell Carcinoma.'
+        result4 = 'Kidney Renal Clear Cell Carcinoma'
     elif(np.array(score).argmax() == 4):
         result = f'The RNA-seq data most likely belongs to class: Lung Normal Tissue.'
+        result4 = 'Lung Normal Tissue'
     elif(np.array(score).argmax() == 5):
         result = f'The RNA-seq data most likely belongs to class: Lung Adenocarcinoma.'
+        result4 = 'Lung Adenocarcinoma'
     elif(np.array(score).argmax() == 6):
         result = f'The RNA-seq data most likely belongs to class: Uterine Corpus Endometrial Normal Tissue.'
+        result4 = 'Uterine Corpus Endometrial Normal Tissue'
     elif(np.array(score).argmax() == 7):
         result = f'The RNA-seq data most likely belongs to class: Uterine Corpus Endometrial Carcinoma.'
+        result4 = 'Uterine Corpus Endometrial Carcinoma'
     else:
         result = 'error'
     
@@ -44,7 +52,6 @@ def predict():
 
     result2 = f'{np.array(score)}'
     result3 = '(Left to right): BRCA.N, BRCA.T, KIRC.N, KIRC.T, LUAD.N, LUAD.T, UCEC.N, UCEC.T'
-    result4 = ''
     response = {
         'result': result,
         'result2': result2,

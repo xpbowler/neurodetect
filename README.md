@@ -1,3 +1,4 @@
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE.md)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/xpbowler/RNA-seq-Based-Cancer-Identification---NeuroDetect-Website.svg)
 
 ## Background

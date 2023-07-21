@@ -29,6 +29,7 @@ NeuroDetect takes a 2D image transformed from RNA-seq data as the input. Under `
 To test out NeuroDetect, input a file from any of the 8 categories under test data, which the CNN has never seen before. 
 
 
+
 ## Installation
 
 Requirements: 

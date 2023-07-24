@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../App.css';
+import {Box} from '@mui/material'
 
 import brca_pca from '../plots/brca_pca_img.png';
 import ucec_pca from '../plots/ucec_pca.png';
@@ -17,6 +18,7 @@ import sample_ucec_t from '../sample_images/ucec_t.png';
 class HowItWorks extends Component{
     render(){
         return(
+          <Box sx={{paddingTop:'80px', paddingLeft: '30px'}}>
             <div className="how_it_works">
               <p className="textbox" data-element="textbox">NeuroDetect uses a convolutional neural network (CNN) to classify RNA-seq data. Raw numerical data is 
               first preprocessed through a dimensionality reduction of the data. It is transformed into a 2D heatmap, which the CNN is able to identify and 
@@ -62,6 +64,7 @@ class HowItWorks extends Component{
               </div>
               <br/>
             </div>
+          </Box>
         )
     }
 }

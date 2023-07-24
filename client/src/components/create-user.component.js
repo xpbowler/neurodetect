@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import {Box} from '@mui/material'
 
 export default class CreateUser extends Component{
     constructor(props){
@@ -41,22 +42,24 @@ export default class CreateUser extends Component{
 
     render(){
         return(
-            <div className="container">
-                <h3>Create an Account:</h3>
-                <form onSubmit={this.onSubmit}>
-                    <div className="form-group">
-                        <label>Username</label>
-                        <input type="text" value={this.state.username} onChange={this.onChangeUsername}/>
-                    </div>
-                    <div className="form-group">
-                        <label>Password</label>
-                        <input type="text" value={this.state.password} onChange={this.onChangePassword} />
-                    </div>
-                    <div className="form-group">
-                        <input type="submit" value="Create Account" className="btn btn-primary"/>
-                    </div>
-                </form>
-            </div>
+            <Box sx={{paddingTop: '100px', paddingLeft: '30px'}}>
+                <div className="container" style={{width: '800px'}}>
+                    <h3>Create an Account:</h3>
+                    <form onSubmit={this.onSubmit}>
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" class="form-control" value={this.state.username} onChange={this.onChangeUsername} placeholder="username" />
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="text" class="form-control" value={this.state.password} onChange={this.onChangePassword} placeholder="password" />
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Create Account" className="btn btn-primary"/>
+                        </div>
+                    </form>
+                </div>
+            </Box>
         )
     }
 }

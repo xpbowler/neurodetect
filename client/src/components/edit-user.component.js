@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { useParams } from "react-router-dom";
 import axios from 'axios';
+import {Box} from '@mui/material'
 
 function withParams(Component) {
     return props => <Component {...props} params={useParams()} />;
@@ -58,22 +59,24 @@ class EditUser extends Component{
 
     render(){
         return(
-            <div>
-                <h3>Edit Username/Password for {this.state.username}</h3>
-                <form onSubmit={this.onSubmit}>
-                    <div className="form-group">
-                        <label>Username</label>
-                        <input type="text" required className="form-control" value={this.state.username} onChange={this.onChangeUsername}/>
-                    </div>
-                    <div className="form-group">
-                        <label>Password</label>
-                        <input type="text" required className="form-control" value={this.state.password} onChange={this.onChangePassword}/>
-                    </div>
-                    <div className="form-group">
-                        <input type="submit" value="Complete changes" className="btn btn-primary"/>
-                    </div>
-                </form>
-            </div>
+            <Box sx={{paddingTop: '100px', paddingLeft: '40px'}}>
+                <div style={{width: '800px'}} className="container">
+                    <h3>Edit Username/Password for {this.state.username}</h3>
+                    <form onSubmit={this.onSubmit}>
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text" required class="form-control" value={this.state.username} onChange={this.onChangeUsername} />
+                        </div>
+                        <div className="form-group">
+                            <label>Password</label>
+                            <input type="text" required class="form-control" value={this.state.password} onChange={this.onChangePassword}/>
+                        </div>
+                        <div className="form-group">
+                            <input type="submit" value="Complete changes" class="btn btn-primary"/>
+                        </div>
+                    </form>
+                </div>
+            </Box>
         )
     }
 }

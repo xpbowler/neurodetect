@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+html,
+body,
+#root,
+.app,
+.content{
+  height: 100%;
+  width: 100;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.app{
+  display: flex;
+  position: relative;
+}

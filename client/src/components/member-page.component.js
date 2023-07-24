@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {useParams, Link} from 'react-router-dom'
 import axios from 'axios'
+import {Box, Typography} from '@mui/material'
 
 function withParams(Component) {
     return props => <Component {...props} params={useParams()} />;
@@ -102,49 +103,51 @@ class MemberPage extends Component{
     
     render(){
         return(
-            <div className="container-fluid">
-                <h3>Welcome {this.state.username}</h3>
-                <br/>
-                <form onSubmit={this.onSubmit}>
-                    <div className="form-group">
-                        <label>Input the RNA-seq data sample*</label>
-                        <input type="file" accept="image/*"required onChange={this.onChangeImage} />
+            <Box sx={{paddingTop: '100px', paddingLeft: '20px', paddingRight: '20px'}}>
+                <div className="container-fluid">
+                    <h3>Welcome {this.state.username}</h3>
+                    <br/>
+                    <form onSubmit={this.onSubmit}>
+                        <div className="form-group">
+                            <label>Input the RNA-seq data sample*</label>
+                            <input type="file" accept="image/*"required onChange={this.onChangeImage} />
+                        </div>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <div className="form-group">
+                            <input type="submit" value="Predict" className="btn btn-primary" />
+                        </div> 
+                    </form>
+                    <div>
+                        <p>{this.state.tempResult}</p>
+                        <p>{this.state.tempResult2}</p>
+                        <p>{this.state.tempResult3}</p>
                     </div>
                     <br/>
                     <br/>
+                    <div>
+                        <h3>Previous Predictions</h3>
+                        <table className="table">
+                            <thead className="thead-light">
+                                <tr>
+                                    <th>Prediction</th>
+                                    <th>P-Distribution</th>
+                                    <th>Class</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {this.resultsList()}
+                            </tbody>
+                        </table>
+                    </div>
                     <br/>
-                    <div className="form-group">
-                        <input type="submit" value="Predict" className="btn btn-primary" />
-                    </div> 
-                </form>
-                <div>
-                    <p>{this.state.tempResult}</p>
-                    <p>{this.state.tempResult2}</p>
-                    <p>{this.state.tempResult3}</p>
+                    <p>*: Raw RNA-seq data must be processed via dimensionality reduction before submitting</p>
+                    <br/>
+                    <Link to={this.state.idtag}><Typography variant="h5">Change username/password</Typography></Link>
                 </div>
-                <br/>
-                <br/>
-                <div>
-                    <h3>Previous Predictions</h3>
-                    <table className="table">
-                        <thead className="thead-light">
-                            <tr>
-                                <th>Prediction</th>
-                                <th>P-Distribution</th>
-                                <th>Class</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {this.resultsList()}
-                        </tbody>
-                    </table>
-                </div>
-                <br/>
-                <p>*: Raw RNA-seq data must be processed via dimensionality reduction before submitting</p>
-                <br/>
-                <Link to={this.state.idtag}>Change username/password</Link>
-            </div>
+            </Box>
         )
     }
 }

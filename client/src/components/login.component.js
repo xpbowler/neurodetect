@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import axios from 'axios'
+import {Box} from '@mui/material'
 
 export default class Login extends Component{
 
@@ -46,30 +47,32 @@ export default class Login extends Component{
 
     render(){
         return(
-            <div className="container">
-                <h3>NeuroDetect Login</h3>
-                <form onSubmit={this.onSubmit}>
-                    <div className="form-group">
-                        <label>Username</label>
-                        <input type="text" required value={this.state.username} onChange={this.onChangeUsername}/>
-                    </div>
-                    <div className="form-group">
-                        <label>Password</label>
-                        <input type="text" required value={this.state.password} onChange={this.onChangePassword} className="form-"/>
-                    </div>
-                    <div className="form-group">
-                        <input type="submit" value="Login" className="btn btn-primary"/> 
-                    </div>
-                </form>
-                {this.state.valid ? (
-                    <></>
-                ): (
-                    <>
-                        <p>Invalid username and/or password</p>
-                    </>
-                )}
-            </div>
-            
+            <Box sx={{paddingTop: '100px', paddingLeft: '30px'}}>
+                <div className="container" style={{width: '800px'}}>
+                    <h3>NeuroDetect Login</h3>
+                    <br/>
+                    <form onSubmit={this.onSubmit}>
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input type="text"  class="form-control" required value={this.state.username} onChange={this.onChangeUsername} placeholder="username"/>
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input  type="text"  class="form-control" required value={this.state.password} onChange={this.onChangePassword} placeholder="password"/>
+                        </div>
+                        <div className="form-group">
+                            <input type="submit" value="Login" className="btn btn-primary"/> 
+                        </div>
+                    </form>
+                    {this.state.valid ? (
+                        <></>
+                    ): (
+                        <>
+                            <p>Invalid username and/or password</p>
+                        </>
+                    )}
+                </div>
+            </Box>
         )
     }
 }

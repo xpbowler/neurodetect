@@ -2,7 +2,7 @@
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/xpbowler/RNA-seq-Based-Cancer-Identification---NeuroDetect-Website.svg)
 
 ## Video Demo of NeuroDetect
-[https://www.youtube.com/watch?v=Hc79sDi3f0U](https://youtu.be/760QNJhCh3k)
+[https://youtu.be/H1u89yBNDfk](https://youtu.be/H1u89yBNDfk)
 
 ## Background
 

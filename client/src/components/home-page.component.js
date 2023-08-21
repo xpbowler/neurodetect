@@ -43,7 +43,7 @@ export default class HomePage extends Component{
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
                         <label>Input the RNA-seq data sample*</label>
-                        <input type="file" accept="image/*"required onChange={this.onChangeImage}/>
+                        <input type="file" accept="image/*" required onChange={this.onChangeImage}/>
                     </div>
                     <br/>
                     <br/>

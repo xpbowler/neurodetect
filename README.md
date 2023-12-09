@@ -1,12 +1,9 @@
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE.md)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/xpbowler/RNA-seq-Based-Cancer-Identification---NeuroDetect-Website.svg)
 
-## Video Demo of NeuroDetect
-[https://youtu.be/H1u89yBNDfk](https://youtu.be/H1u89yBNDfk)
-
 ## Background
 
-As a patient develops cancer, their gene expression pattern changes in a characteristic way that can be quantified by sequencing their RNA, yielding a numerical expression value for every gene. Thus, we developed a convolutional neural network able to predict whether a patient’s RNA-seq data is likely to be representative of cancer tissue. This cost-effective, non-invasive diagnosis method aims to increase the success rate of early cancer detection.
+As a patient develops cancer, their gene expression pattern changes in a characteristic way that can be quantified by sequencing their RNA, yielding a numerical expression value for every gene. Thus, I developed a convolutional neural network able to predict whether a patient’s RNA-seq data is likely to be representative of cancer tissue. This cost-effective, non-invasive diagnosis method aims to increase the success rate of early cancer detection.
 
 ## About
 
@@ -28,7 +25,8 @@ NeuroDetect takes a 2D image transformed from RNA-seq data as the input. Under `
 
 To test out NeuroDetect, input a file from any of the 8 categories under test data, which the CNN has never seen before. 
 
-
+## Video Demo of NeuroDetect
+[https://youtu.be/H1u89yBNDfk](https://youtu.be/H1u89yBNDfk)
 
 ## Installation
 

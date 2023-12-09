@@ -3,7 +3,7 @@
 
 ## Background
 
-As a patient develops cancer, their gene expression pattern changes in a characteristic way that can be quantified by sequencing their RNA, yielding a numerical expression value for every gene. Thus, I developed a convolutional neural network able to predict whether a patient’s RNA-seq data is likely to be representative of cancer tissue. This cost-effective, non-invasive diagnosis method aims to increase the success rate of early cancer detection.
+As a patient develops cancer, their gene expression pattern changes in a characteristic way that can be quantified by sequencing their RNA, yielding a numerical expression value for every gene. NeuroDetect is a convolutional neural network able to predict whether a patient’s RNA-seq data is likely to be representative of cancer tissue. This cost-effective, non-invasive diagnosis method aims to increase the success rate of early cancer detection.
 
 ## About
 

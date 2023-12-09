@@ -7,7 +7,7 @@ As a patient develops cancer, their gene expression pattern changes in a charact
 
 ## About
 
-The CNN was trained with Tensorflow based on patient RNA-seq data transformed into 2D images suitable for the CNN’s convolutional layer. It contains 2.4M parameters, achieves a 98.7% prediction accuracy, and is able to classify 4 types of cancer: breast, lung, kidney, and uterine cancer. 
+The CNN was trained in Tensorflow using patient RNA-seq data transformed into 2D images suitable for the CNN’s convolutional layer. It contains 2.4M parameters, achieves a 98.7% prediction accuracy, and is able to classify 4 types of cancer: breast, lung, kidney, and uterine cancer. 
 
 
 ## How to use it 

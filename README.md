@@ -7,7 +7,7 @@ As a patient develops cancer, their gene expression pattern changes in a charact
 
 ## About
 
-The CNN was trained in Tensorflow using patient RNA-seq data transformed into 2D images suitable for the CNN’s convolutional layer. It contains 2.4M parameters, achieves a 98.7% prediction accuracy, and is able to classify 4 types of cancer: breast, lung, kidney, and uterine cancer. 
+The CNN was trained in Tensorflow using patient RNA-seq data transformed into 2D images suitable for the CNN’s convolutional layer. Architecture: 2.4M parameters, 98.7% accuracy, 2 convolution+MaxPooling layers followed by 2 dense fully-connected layers. The CNN is able to classify 4 types of cancer: breast, lung, kidney, and uterine cancer. 
 
 
 ## How to use it 
@@ -38,7 +38,7 @@ Requirements:
 Instructions:
 1. Clone the repository
 ```
-$ git clone https://github.com/xpbowler/RNA-seq-Based-Cancer-Identification---NeuroDetect-Website
+$ git clone [https://github.com/xpbowler/RNA-seq-Based-Cancer-Identification---NeuroDetect-Website](https://github.com/xpbowler/neurodetect)
 ```
 2. Install required dependencies
 3. Run frontend

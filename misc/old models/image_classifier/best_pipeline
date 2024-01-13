@@ -1,1 +1,0 @@
-{"inputs": [[]], "outputs": [[{"class_name": "AddOneDimension", "config": {}}, {"class_name": "OneHotEncoder", "config": {"labels": ["brca_n", "brca_t", "kirc_n", "kirc_t", "luad_n", "luad_t", "ucec_n", "ucec_t"]}}]]}

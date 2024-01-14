@@ -46,6 +46,26 @@ Environment variables are :
 |`PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION`   |  Tensorflow environment variable for Mac |    ✅     |       ❌       |  Set to `python`  |
 |   `DATABASE_HOST`   |        MongoDB database host URL        |    ✅     |       ❌       |              Can't be empty string               |
 
+File structure:
+
+```bash
+.
+├── R # R scripts used to pre-process raw RNA-seq data
+├── c_images # processed RNA-seq dataset (2D-transformed)
+├── client # React frontend directory
+│   ├── database # express server connecting to MongoDB database
+│   ├── public # React HTML renderer
+│   ├── src # javascript files to run website
+│   │  ├── components # various react pages for website
+│   │  ├── sample_images # sample 2D-image inputs for CNN for testing purposes
+├── ics4u_cnn2 # Weights for CNN
+├── flask-server # Python Flask backend for handling predictions
+├── package.json # project metadata
+├── package-lock.json # project dependencies
+└── README.md 
+
+```
+
 Instructions:
 1. Clone the repository
 ```

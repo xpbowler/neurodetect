@@ -1,6 +1,6 @@
 
 client/database/.env
-node_modules/.DS_Store
+node_modules
 .gitattributes
 .DS_Store
 .vscode

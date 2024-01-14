@@ -1,0 +1,1 @@
+R scripts used to pre-process raw RNA-seq data into 2D-transformed images accepted by the CNN. 
